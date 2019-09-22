@@ -7,3 +7,5 @@ Steps:
 The architecture of the software is as follows:
 
 ![alt text](https://drive.google.com/file/d/1R2GzVUISTyRzRdPHuGXGUq_bAh0YZHeS/view?usp=sharing)
+
+You can find an example of how to use this software in the following link:
