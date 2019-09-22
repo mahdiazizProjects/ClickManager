@@ -1,0 +1,30 @@
+﻿<Window x:Class="ModelRunner.MainWindow" 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ModelRunner"
+        mc:Ignorable="d"
+        Title="Model Runner" Height="250" Width="350">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal" >
+                <Label Content="Model Name(s):" Margin="10,10,10,10"/>
+                <Button Name="BrowseBtn" Content="Browse" Width="150" Height="30" Padding="3,3,3,3" Background="WhiteSmoke" Margin="30,10,10,10" Click="BrowseBtn_Click"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" >
+                <Label Content="  # of Iterations:" Margin="10,10,10,10"/>
+                <TextBox Name="NumIterationTxt" Width="150" Height="30" Padding="3,3,3,3" Margin="30,10,10,10"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" >
+                <Label Content="Running Type:" Margin="19,10,10,10"/>
+                <ComboBox HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Name="RunningTypeCB" Width="150" Height="30" Padding="3,3,3,3" Margin="30,10,10,10" SelectedIndex="1">
+                    <ComboBoxItem>All</ComboBoxItem>
+                    <ComboBoxItem>Random</ComboBoxItem>
+                    <ComboBoxItem>None</ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+            <Button Name="RunBtn" Content="Run" Background="WhiteSmoke" Margin="10,15,10,10" HorizontalAlignment="Center" Width="300" Height="30" Click="RunBtn_Click" />
+        </StackPanel>
+    </Grid>
+</Window>
